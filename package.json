@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-website",
+  "version": "1.0.0",
+  "description": "A project using Tailwind CSS for styling.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./style.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./style.css -o ./dist/output.css --watch",
+    "predeploy": "npm run build:css",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
